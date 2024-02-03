@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Zingrust;
+    src: url(/fontes/zing.rust-demo-base.otf) format('opentype');
+}
+
+:root {
+    --backgrounds-Principal: #f0f8ff;
+    --backgrounds-Claro: #CA06FB;
+    --backgrounds-Escuro: #8800AA;
+    --backgrounds-WindowsClaro: #e89ffa;
+}
+
+img {
+    width: 3rem;
+}
+
+body {
+    background-color: var(--backgrounds-Principal);
+}
+
+* {
+    transition: .5s;
+    padding: none;
+    border: none;
+    margin: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Zingrust, arial, sans-serif;
+}
+
+
+.nav01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav01 .iconLogo img {
+    width: 7.5rem;
+}
+
+.centralOptions ul{
+    display: flex;
+}
+
+.centralOptions ul li {
+    display: flex;
+    padding: 0 .5rem;
+    align-items: center;
+    gap: .5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.centralOptions ul *:hover {
+    display: flex;
+    padding: 0 .5rem;
+    align-items: center;
+    gap: .5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--backgrounds-Claro);
+}
+
+.loginOption {
+    display: flex;
+    align-items: center;
+}
+
+.loginOption *:hover {
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: var(--backgrounds-Claro);
+}
+
+.line {
+    width: 60%;
+    border: .2rem solid #8800AA;
+    border-radius: .5rem;
+    margin: auto;
+    margin-bottom: .8rem;
+    box-shadow: var(--backgrounds-Escuro) 0px .1rem .2rem;
+}
+
+.layoutLinkMP3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.5rem;
+    height: min-content;
+    padding: 1.5rem .5rem;
+    background: var(--backgrounds-WindowsClaro);
+    box-shadow: var(--backgrounds-Escuro) 0px 0px .5rem;
+    margin: auto;
+    border-radius: .5rem;
+    border-left: var(--backgrounds-Escuro) .5rem solid;
+
+}
+.layoutLinkMP3:hover {
+    box-shadow: var(--backgrounds-WindowsClaro) 0px 0px .7rem;
+    
+}
+
+
+.inputMP3 {
+    display: flex;
+    background: #f0f8ff;
+    align-items: center;
+    align-items: center;
+}
+
+.inputMP3 div img {
+    position: relative;
+    width: 1.5rem;
+    left: 90%;
+
+}
+
+.inputMP3 div {
+    display: flex;
+    align-items: center;
+
+}
+
+.inputMP3 div input {
+    
+}
+
+.division01 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}

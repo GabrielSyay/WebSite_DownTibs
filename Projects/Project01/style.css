@@ -1,0 +1,144 @@
+:root {
+    --BackGroundSite: #fde7bc;
+    --BackGroundSite-Escuro: #be8511;
+    --ColorGray: #494949;
+    --shadow: #222222;
+    --shadow-white: #ffffff;
+
+
+}
+
+/*#f080ff*/
+
+@font-face {
+    font-family: Coffer;
+    src: url(/fontes/Autography-DOLnW.otf);
+}
+
+
+* {
+    transition: .5s;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background: var(--BackGroundSite);
+}
+
+img {
+    width: 5rem;
+    max-width: 100%;
+}
+
+.headCentral {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 2rem;
+    flex-wrap: wrap;
+    background: var(--BackGroundSite-Escuro);
+    gap: 1rem;
+    box-shadow: var(--shadow) 0 .1rem .5rem;
+}
+
+.logoType {
+    display: flex;
+    align-items: end;
+}
+
+.logoType h1 {
+    font-family: Coffer, arial;
+    font-size: 3rem;
+    color: var(--ColorGray);
+}
+
+.headCentral .items ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headCentral .items ul li {
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--BackGroundSite);
+    font-weight: bolder;
+}
+
+.headCentral .items ul li img {
+    width: 2rem;
+}
+
+.headCentral .items ul li:hover {
+    color: var(--ColorGray);
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-shadow: var(--shadow-white) 0 0 .5rem;
+    animation: balanco 1s ease-in-out infinite;
+}
+
+@keyframes balanco {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0rem)
+    }
+}
+
+.line {
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    border: var(--ColorGray) solid .2rem;
+    box-shadow: var(--shadow) 0 .05rem .1rem;
+
+}
+
+.hotDoors {
+    width: 37.5rem;
+    margin: auto;
+    background-image: url(/Projects/Project01/imgs/CafeImagemwp.webp);
+    border-radius: .5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: var(--shadow) 0 .2rem .5rem;
+    cursor: pointer;
+}
+
+.hotDoors:hover {
+    width: 37rem;
+    box-shadow: none;
+}
+
+.hotDoors div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    border-left: var(--BackGroundSite-Escuro) solid .5rem;
+    
+}
